@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: muestra usuario
       run: 
-        whoiam
+        whoami
  
     - name: permisos script
       run: |
