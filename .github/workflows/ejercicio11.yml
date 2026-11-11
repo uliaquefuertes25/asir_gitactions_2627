@@ -15,8 +15,9 @@ jobs:
  
     - name: permisos script
       run: |
+        pwd
+        ls -l 
         chmod +x src/script.sh
-        ls -l /src/script.sh
         
     - name: ejecuta script
       run:
