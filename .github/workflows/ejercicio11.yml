@@ -6,6 +6,9 @@ jobs:
   ejecutar_script:
     runs-on: ubuntu-26.04
     steps:
+    - name: descargar repositorio
+      uses: actions/checkout@v5
+      
     - name: muestra usuario
       run: 
         whoami
