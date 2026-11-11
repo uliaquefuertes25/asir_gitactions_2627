@@ -7,5 +7,6 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
     - name: ejecucion script
-      run: 
-        chmod +x /src/script.sh
+      run: |
+        chmod +x src/script.sh
+        ./src/script.sh
