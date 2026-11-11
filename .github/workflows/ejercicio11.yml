@@ -1,0 +1,11 @@
+name: Github Action para ejercicio 11
+on:
+  push:
+    branches: [main]
+jobs:
+  ejecutar_script:
+    runs-on: ubuntu-26.04
+    steps:
+    - name: ejecucion script
+      run: 
+        chmod +x /src/script.sh
