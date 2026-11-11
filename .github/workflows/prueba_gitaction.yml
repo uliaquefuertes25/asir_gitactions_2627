@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Escribir hola
-      run :  
+      run : |
         echo "hola"
         echo "Hoy es" date
