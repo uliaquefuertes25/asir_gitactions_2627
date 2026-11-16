@@ -1,0 +1,23 @@
+name: Github Action para ejercicio 12
+on:
+  push:
+    #Si se especifica a la rama a la que hacemos el push
+    #branches: [ main ]
+jobs:
+  ejecutar_script:
+    runs-on: ubuntu-26.04
+    steps:
+    - name: descargar repositorio
+      uses: actions/checkout@v5
+      
+    - name: crear carpeta backup
+      run: 
+        mkdir backup
+    
+    - name: Crear zip comprimido
+      run: 
+        zip -r backup/backup_datos.zip datos/
+        
+    - name: Subir artefacto
+      uses: action/upload-artifact@v5
+    
