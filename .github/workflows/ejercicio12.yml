@@ -20,4 +20,6 @@ jobs:
         
     - name: Subir artefacto
       uses: action/upload-artifact@v5
-    
+      with:
+        name: copia_seguridad
+        path: backup/backup_datos.zip
