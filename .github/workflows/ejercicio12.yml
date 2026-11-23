@@ -5,7 +5,7 @@ on:
     #branches: [ main ]
 jobs:
   ejecutar_script:
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     steps:
     - name: descargar repositorio
       uses: actions/checkout@v5
@@ -16,7 +16,7 @@ jobs:
     
     - name: Crear zip comprimido
       run: 
-        zip -r backup/backup_datos.zip datos/
+        zip -r backup/backup_datos.zip datos
         
     - name: Subir artefacto
       uses: action/upload-artifact@v5
